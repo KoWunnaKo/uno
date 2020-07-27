@@ -23,6 +23,26 @@ namespace Windows.UI.Xaml.Controls
 		{
 		}
 
+		#region TimePickerFlyoutStyle DependencyProperty
+
+		public Style TimePickerFlyoutStyle
+		{
+			get { return (Style)this.GetValue(TimePickerFlyoutStyleProperty); }
+			set { this.SetValue(TimePickerFlyoutStyleProperty, value); }
+		}
+
+		public static DependencyProperty TimePickerFlyoutStyleProperty { get; } =
+			DependencyProperty.Register(
+				"TimePickerFlyoutStyle",
+				typeof(Style),
+				typeof(TimePickerFlyout),
+				new FrameworkPropertyMetadata(
+					default(Style),
+					FrameworkPropertyMetadataOptions.ValueDoesNotInheritDataContext
+					));
+
+		#endregion
+
 		protected override void InitializePopupPanel()
 		{
 			_popup.PopupPanel = new PickerFlyoutPopupPanel(this)
@@ -102,7 +122,11 @@ namespace Windows.UI.Xaml.Controls
 
 		protected override Control CreatePresenter()
 		{
-			_timePickerPresenter = new TimePickerFlyoutPresenter() { Content = Content };
+			_timePickerPresenter = new TimePickerFlyoutPresenter()
+			{
+				Content = Content,
+				Style = TimePickerFlyoutStyle
+			};
 
 			void onLoad(object sender, RoutedEventArgs e)
 			{

@@ -115,6 +115,24 @@ namespace Windows.UI.Xaml.Controls
 
 		#endregion
 
+		#region TimePickerFlyoutStyle DependencyProperty
+
+		public Style TimePickerFlyoutStyle
+		{
+			get { return (Style)this.GetValue(TimePickerFlyoutStyleProperty); }
+			set { this.SetValue(TimePickerFlyoutStyleProperty, value); }
+		}
+
+		public static DependencyProperty TimePickerFlyoutStyleProperty { get; } =
+			DependencyProperty.Register(
+				"TimePickerFlyoutStyle",
+				typeof(Style),
+				typeof(TimePicker),
+				new FrameworkPropertyMetadata(
+					default(Style),
+					FrameworkPropertyMetadataOptions.ValueDoesNotInheritDataContext));
+
+		#endregion
 
 		public LightDismissOverlayMode LightDismissOverlayMode
 		{
@@ -196,6 +214,7 @@ namespace Windows.UI.Xaml.Controls
 				{
 #if __IOS__
 					Placement = FlyoutPlacement,
+					TimePickerFlyoutStyle = this.TimePickerFlyoutStyle,
 #endif
 					Time = this.Time,
 					MinuteIncrement = this.MinuteIncrement,

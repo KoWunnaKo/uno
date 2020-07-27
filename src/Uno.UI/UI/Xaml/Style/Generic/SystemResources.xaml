@@ -791,7 +791,7 @@
 			<StaticResource x:Key="TimePickerButtonForegroundFocused" ResourceKey="SystemControlHighlightAltBaseHighBrush" />
 
 			<!-- Resources for Windows.UI.Xaml.Controls.TimePickerFlyoutPresenter -->
-			<StaticResource x:Key="TimePickerFlyoutPresenterBackground" ResourceKey="SystemControlTransientBackgroundBrush" />
+			<StaticResource x:Key="TimePickerFlyoutPresenterBackground" ResourceKey="SystemChromeBlackHighColor" />
 			<StaticResource x:Key="TimePickerFlyoutPresenterBorderBrush" ResourceKey="SystemControlTransientBorderBrush" />
 			<StaticResource x:Key="TimePickerFlyoutPresenterSpacerFill" ResourceKey="SystemControlForegroundBaseLowBrush" />
 			<StaticResource x:Key="TimePickerFlyoutPresenterHighlightFill" ResourceKey="SystemControlHighlightListAccentLowBrush" />
@@ -963,6 +963,7 @@
 			<SolidColorBrush x:Key="ThumbPointerOverBorderThemeBrush" Color="#6BB7B7B7" />
 			<SolidColorBrush x:Key="ThumbPressedBackgroundThemeBrush" Color="#99000000" />
 			<SolidColorBrush x:Key="ThumbPressedBorderThemeBrush" Color="#ED555555" />
+			<SolidColorBrush x:Key="TimePickerBackgroundThemeBrush" Color="#FF000000" />
 			<SolidColorBrush x:Key="TimePickerForegroundThemeBrush" Color="#FF000000" />
 			<SolidColorBrush x:Key="TimePickerHeaderForegroundThemeBrush" Color="#FFFFFFFF" />
 
@@ -2080,7 +2081,7 @@
 			<StaticResource x:Key="TimePickerButtonForegroundFocused" ResourceKey="SystemControlHighlightAltBaseHighBrush" />
 
 			<!-- Resources for Windows.UI.Xaml.Controls.TimePickerFlyoutPresenter -->
-			<StaticResource x:Key="TimePickerFlyoutPresenterBackground" ResourceKey="SystemControlBackgroundChromeMediumLowBrush" />
+			<StaticResource x:Key="TimePickerFlyoutPresenterBackground" ResourceKey="SystemControlTransientBackgroundBrush" />
 			<StaticResource x:Key="TimePickerFlyoutPresenterBorderBrush" ResourceKey="SystemControlTransientBorderBrush" />
 			<StaticResource x:Key="TimePickerFlyoutPresenterSpacerFill" ResourceKey="SystemControlForegroundBaseLowBrush" />
 			<StaticResource x:Key="TimePickerFlyoutPresenterHighlightFill" ResourceKey="SystemControlHighlightListAccentLowBrush" />
@@ -2252,6 +2253,7 @@
 			<SolidColorBrush x:Key="ThumbPointerOverBorderThemeBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
 			<SolidColorBrush x:Key="ThumbPressedBackgroundThemeBrush" Color="{ThemeResource SystemColorButtonFaceColor}" />
 			<SolidColorBrush x:Key="ThumbPressedBorderThemeBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
+			<SolidColorBrush x:Key="TimePickerBackgroundThemeBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
 			<SolidColorBrush x:Key="TimePickerForegroundThemeBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
 			<SolidColorBrush x:Key="TimePickerHeaderForegroundThemeBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
 
@@ -3540,6 +3542,7 @@
 			<SolidColorBrush x:Key="ThumbPointerOverBorderThemeBrush" Color="#6BB7B7B7"/>
 			<SolidColorBrush x:Key="ThumbPressedBackgroundThemeBrush" Color="#99000000"/>
 			<SolidColorBrush x:Key="ThumbPressedBorderThemeBrush" Color="#ED555555"/>
+			<SolidColorBrush x:Key="TimePickerBackgroundThemeBrush" Color="#FFFFFFFF" />
 			<SolidColorBrush x:Key="TimePickerForegroundThemeBrush" Color="#FF000000" />
 			<SolidColorBrush x:Key="TimePickerHeaderForegroundThemeBrush" Color="#FF000000" />
 
